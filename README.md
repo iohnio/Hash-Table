@@ -3,8 +3,8 @@
 Hash-Table is a C++ project that implements a simplified file system using a hash table to efficiently manage file operations such as insertion, lookup, and deletion. File names are used as keys, and collisions are handled using linear probing, quadratic probing, and double hashing. The system dynamically resizes based on load factor and deletion ratio, performing incremental rehashing into a larger prime-sized table while excluding deleted entries. It also supports switching collision resolution strategies during runtime, with new policies applied after rehashing. The project emphasizes efficient storage management, collision handling, and adaptive performance through dynamic resizing and probing techniques.
 ## How to Run the Project
 1. open terminal
-2. run 'make clean' to make sure no old object files are present
-3. run 'make build' to compile shell.c and utils.c
+2. compile: g++ driver.cpp filesys.cpp -o filesys
+3. run the executable: ./filesys
 
 ## Example Usage
 ```bash
